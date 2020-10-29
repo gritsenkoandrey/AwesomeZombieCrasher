@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8922468948217311794}
   - component: {fileID: 8922468948216344818}
   - component: {fileID: 4432403822139492442}
-  - component: {fileID: -1583325638870699542}
+  - component: {fileID: 2139865957986332998}
   m_Layer: 0
   m_Name: TruckTroop02C
   m_TagString: Untagged
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.4, y: 4.4, z: 10.8}
   m_Center: {x: 0, y: 2.1, z: 2.3}
---- !u!114 &-1583325638870699542
+--- !u!114 &2139865957986332998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,12 +105,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8922468948214148658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801ce9c1ed7be914886350b421a523ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c8f8e0fa1c2e4c4d8338c09cdd0f3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 50
   _explosionPrefab: {fileID: 1242859992640132, guid: a30f4231b59ac4cac82b2b2931f7a678,
     type: 3}
-  _damage: 50
 --- !u!1 &8922468948214148660
 GameObject:
   m_ObjectHideFlags: 0

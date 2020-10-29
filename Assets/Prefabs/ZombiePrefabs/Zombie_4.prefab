@@ -3241,7 +3241,7 @@ GameObject:
   - component: {fileID: 6994282542469502189}
   - component: {fileID: 6994282542469502191}
   - component: {fileID: 6994282542469502190}
-  - component: {fileID: 5246858390253355352}
+  - component: {fileID: -8230926439411155534}
   m_Layer: 0
   m_Name: Zombie_4
   m_TagString: Untagged
@@ -3293,7 +3293,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5246858390253355352
+--- !u!114 &-8230926439411155534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3302,9 +3302,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6994282542469502188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20a557d64afdfc49b5ee50254e414a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 317e6cc34d875624cb57c031621f41a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _bloodEffect: {fileID: 1690365919121730, guid: 01905950d6bb84877a984f64b83d6c2d,
     type: 3}
-  _speed: 1

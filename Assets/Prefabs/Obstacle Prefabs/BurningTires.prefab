@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 454914}
   - component: {fileID: 6595862}
-  - component: {fileID: -7195809010094679572}
+  - component: {fileID: 8807125540271112143}
   m_Layer: 0
   m_Name: BurningTires
   m_TagString: Obstacle
@@ -128,7 +128,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.27, y: 1, z: 1.4}
   m_Center: {x: -0.18, y: 0.5, z: 0.23}
---- !u!114 &-7195809010094679572
+--- !u!114 &8807125540271112143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,12 +137,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 154914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801ce9c1ed7be914886350b421a523ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c8f8e0fa1c2e4c4d8338c09cdd0f3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 10
   _explosionPrefab: {fileID: 1242859992640132, guid: a30f4231b59ac4cac82b2b2931f7a678,
     type: 3}
-  _damage: 10
 --- !u!1 &154916
 GameObject:
   m_ObjectHideFlags: 0

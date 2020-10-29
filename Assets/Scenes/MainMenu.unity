@@ -1149,7 +1149,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551824738}
-  - component: {fileID: 551824739}
   m_Layer: 0
   m_Name: MainMenuController
   m_TagString: Untagged
@@ -1171,20 +1170,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &551824739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551824737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccf38f07fe6c39d4fb45b77b4a5affe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playButton: {fileID: 1011568245}
-  _animator: {fileID: 963194229}
 --- !u!1 &653949847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1558,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 786c4fba4266c9542b3356eda6ae2168, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -1589,9 +1574,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a0c94b039bc834fbadef8fad597417, type: 3}
+  m_Script: {fileID: 11500000, guid: 01aff998a5c316a4f80adee88dfa02f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playButton: {fileID: 1011568245}
+  _animator: {fileID: 963194229}
 --- !u!1 &1011568240
 GameObject:
   m_ObjectHideFlags: 0
