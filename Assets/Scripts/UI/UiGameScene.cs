@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-public class UiGameScene : MonoBehaviour
+public sealed class UiGameScene : MonoBehaviour
 {
     [SerializeField] private GameObject _pausePanel = null;
     [SerializeField] private GameObject _gameOverPanel = null;

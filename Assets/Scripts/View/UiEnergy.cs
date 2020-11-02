@@ -12,7 +12,6 @@ public sealed class UiEnergy : MonoBehaviour
 
     private void ResetShooting()
     {
-        CurrentPlayerFire.ICanShoot = true;
         _fireBar.GetComponent<Animator>().Play("Idle");
     }
 }

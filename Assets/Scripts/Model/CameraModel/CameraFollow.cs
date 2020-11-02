@@ -16,22 +16,10 @@ public sealed class CameraFollow : MonoBehaviour
     private float _currentHeight;
     private Quaternion _currentRotation;
 
-    private Transform _target;
-
-    private void Start()
+    public void FollowPlayer(Transform player)
     {
-        _target = FindObjectOfType<BasePlayer>().transform;
-    }
-
-    private void LateUpdate()
-    {
-        FollowPlayer();
-    }
-
-    private void FollowPlayer()
-    {
-        _wantedRotationAngle = _target.eulerAngles.y;
-        _wantedHeight = _target.position.y + _height;
+        _wantedRotationAngle = player.eulerAngles.y;
+        _wantedHeight = player.position.y + _height;
 
         _currentRotationAngle = transform.eulerAngles.y;
         _currentHeight = transform.position.y;
@@ -44,7 +32,7 @@ public sealed class CameraFollow : MonoBehaviour
 
         _currentRotation = Quaternion.Euler(0.0f, _currentRotationAngle, 0.0f);
 
-        transform.position = _target.position;
+        transform.position = player.position;
         transform.position -= _currentRotation * Vector3.forward * _distance;
         transform.position = new Vector3(transform.position.x, _currentHeight, transform.position.z);
     }

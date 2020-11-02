@@ -1,28 +1,30 @@
 ﻿using UnityEngine;
-using UnityEngine.UIElements;
 
 
-public sealed class InputController : MonoBehaviour
+public sealed class InputController : BaseController, IExecute, IInitialization
 {
     private readonly KeyCode _moveLeft = KeyCode.A;
     private readonly KeyCode _moveRight = KeyCode.D;
     private readonly KeyCode _moveFast = KeyCode.W;
     private readonly KeyCode _moveSlow = KeyCode.S;
-    private readonly MouseButton _fire = MouseButton.LeftMouse;
+
+    private readonly int _fire = (int)MouseButton.LeftButton;
 
     private IMove _iMove;
     private IFire _iFire;
-    private UiEnergy _uiEnergy;
 
-    private void Awake()
+    public InputController()
     {
-        _iMove = FindObjectOfType<CurrentPlayerMove>();
-        _iFire = FindObjectOfType<CurrentPlayerFire>();
-
-        _uiEnergy = FindObjectOfType<UiEnergy>();
+        Cursor.visible = false;
     }
 
-    private void Update()
+    public void Initialization()
+    {
+        _iMove = Object.FindObjectOfType<CurrentPlayerMove>();
+        _iFire = Object.FindObjectOfType<CurrentPlayerFire>();
+    }
+
+    public void Execute()
     {
         if (Input.GetKeyDown(_moveLeft))
         {
@@ -54,10 +56,10 @@ public sealed class InputController : MonoBehaviour
             _iMove.MoveNormal();
         }
 
-        if (Input.GetMouseButtonDown((int)_fire))
+        if (Input.GetMouseButton(_fire))
         {
             _iFire.Shoot();
-            _uiEnergy.ShootingAnim();
+            uiInterface.UiEnergy.ShootingAnim();
         }
     }
 }
